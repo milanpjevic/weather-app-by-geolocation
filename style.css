@@ -103,7 +103,14 @@ body {
 }
 .hour-scale-container {
   background: #6aa9ff;
-  border-radius: 1rem;
+  border-radius: 2rem;
+}
+.fas {
+  width: 1rem;
+  color: #d2d2d7;
+}
+.fa-chevron-right {
+  margin-left: 1rem;
 }
 /* ------------------------- Current Details ----------------------- */
 .current-details-container {
