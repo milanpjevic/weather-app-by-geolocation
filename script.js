@@ -217,7 +217,6 @@ window.addEventListener("load", () => {
 
           // Current
           const currentData = data.current;
-          console.log(currentData);
           // Current - Main
           const currentTemp = kelvinToCelsius(currentData.temp);
           const currentIcon = currentData.weather[0].icon;
