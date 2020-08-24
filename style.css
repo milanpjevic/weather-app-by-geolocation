@@ -1,0 +1,194 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #283e51;
+  background-image: linear-gradient(
+    135deg,
+    #283e51 8%,
+    #456b89 50%,
+    #6297c5 100%
+  );
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.icon-location {
+  width: 1.5rem;
+}
+.row1,
+.row2 {
+  display: flex;
+}
+.row1 {
+  margin-top: 6rem;
+}
+.current-container,
+.current-details-container {
+  width: 30vw;
+  height: 35vh;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+.hourly-container,
+.daily-container {
+  width: 30vw;
+  height: 35vh;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+/* ------------------------------ Current ---------------------------- */
+.current-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-icon {
+  width: 10rem;
+  padding: 1rem;
+}
+.main-temperature {
+  font-weight: 800;
+  font-size: 4rem;
+}
+.main-description {
+  font-size: 1.25rem;
+}
+/* ------------------------------- Hourly --------------------------- */
+.hourly-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hourly {
+  width: 400px;
+  padding: 0.5rem;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+}
+.hour {
+  min-width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2px;
+}
+.active {
+  cursor: grabbing;
+}
+.hour-icon {
+  width: 3rem;
+  margin: 0.5rem 0;
+}
+.hour-temperature {
+  margin: 0.5rem 0.5rem;
+}
+.hour-temperature-container {
+  width: 20px;
+  height: 120px;
+  background: transparent;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.hour-scale-container {
+  background: #6aa9ff;
+  border-radius: 1rem;
+}
+/* ------------------------- Current Details ----------------------- */
+.current-details-container {
+  display: flex;
+  justify-content: space-around;
+}
+.right,
+.left {
+  margin-top: 2.2rem;
+}
+.details {
+  display: flex;
+  padding: 0.5rem;
+}
+.details-icon {
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.humididity-preassure {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* ----------------------------- Daily ------------------------------ */
+.daily-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.days {
+  width: 400px;
+  padding: 0.5rem;
+  display: flex;
+  overflow: hidden;
+}
+.day {
+  min-width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2px;
+}
+.date {
+  margin-bottom: 0.5rem;
+}
+.daily-icon {
+  width: 3rem;
+}
+.day-temperature-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.day-max-temperature {
+  margin: 0.5rem;
+}
+.day-scale-container {
+  width: 20px;
+  height: 120px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  margin: 0.5rem;
+}
+.scale-high,
+.scale-low {
+  background: transparent;
+  border-radius: 1rem;
+}
+.scale-middle {
+  background: #6aa9ff;
+  border-radius: 1rem;
+}
+/* ---------------------------- Footer ----------------------------- */
+footer {
+  background: #e0d2cd;
+  color: #283e51;
+  text-align: center;
+  margin-top: 15rem;
+}
+footer a {
+  color: black;
+  text-decoration: none;
+  margin: 0.25rem;
+}
