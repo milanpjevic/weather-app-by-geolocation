@@ -296,7 +296,8 @@ window.addEventListener("load", () => {
           </div>`;
 
           currentDetails.innerHTML = details;
-        });
+        })
+        .catch((error) => console.log(error));
     });
   }
 });
